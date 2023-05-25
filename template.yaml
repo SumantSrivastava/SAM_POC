@@ -52,7 +52,7 @@ Resources:
         Name: Id
         Type: String
       ProvisionedThroughput:
-        ReadCapacityUnits: 2
+        ReadCapacityUnits: 3
         WriteCapacityUnits: 2
   
   SamplePersonTable:

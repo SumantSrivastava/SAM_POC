@@ -22,7 +22,7 @@ public class BooksController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Book>>> Get([FromQuery] int limit = 10)
     {
-        if (limit <= 0 || limit > 100) return BadRequest("The limit should been between [1-100]");
+        if (limit <= 0 || limit > 100) return BadRequest("The limit should been between [1-100], do not cross the limit");
 
         return Ok(await bookRepository.GetBooksAsync(limit));
     }
