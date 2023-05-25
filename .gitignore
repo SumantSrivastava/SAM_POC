@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/macos,linux,windows,sublimetext,dotsettings,visualstudio,visualstudiocode
 
+.aws-sam/*.*
+src/samapp/bin/*.*
+
 ### DotSettings ###
 *.DotSettings
 ### Linux ###
@@ -396,6 +399,8 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+
 
 ### VisualStudio Patch ###
 # By default, sensitive information, such as encrypted password
